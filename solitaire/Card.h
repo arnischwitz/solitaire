@@ -11,15 +11,15 @@ enum Suit
 	Spade
 };
 
-const char* suit_to_str[] = { "Club", "Diamond", "Heart", "Spade" };
+const char* suit_to_str[] = { "Cl", "Di", "Ht", "Sp" };
 
-const char* rank_to_str[] = { "!", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+const char* rank_to_str[] = { "[]", "A ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10", "J ", "Q ", "K " };
 
 class Card
 {
 
 public:
-	Card() = default;
+	Card(Suit, short, short);
 	Card(const Card& other) = default;
 	~Card() = default;
 
