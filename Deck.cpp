@@ -3,6 +3,7 @@
 #include "Deck.h"
 #include <algorithm>
 #include <random>
+#include "time.h"
 
 Deck::Deck(DeckType type)
 {
@@ -43,6 +44,7 @@ void Deck::shuffle()
 
 	int j, temp;
 	index = 51;
+	srand(static_cast<unsigned int>(time(NULL)));
 	for ( ; index > 0; --index)
 	{
 		//get swap index

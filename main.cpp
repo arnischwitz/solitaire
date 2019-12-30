@@ -43,9 +43,6 @@ int main()
 			++iter;
 		}
 
-		char x;
-		std::cin >> x;
-
 		gameActive = false;
 	}
 
